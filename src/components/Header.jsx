@@ -13,7 +13,7 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
- <div className=" bg-white z-50 top-0 sticky py-2">   <nav >
+ <div className=" bg-white z-[9999999] top-0 sticky py-2">   <nav >
  <Container>
  <nav class="navbar ">
         <div class="navbar-container container">

@@ -31,7 +31,7 @@ const ProdectList = () => {
          <h1 className="text-[22px] md:text-[30px] uppercase text-black font-bold text-center mt-[120px]">
           Product List
         </h1>
-     {loding ? <div className="flex justify-center mt-10"><Loding/></div> : category.length > 0 && category?.map(item =>(
+     {loding ? <div className="flex justify-center  mt-10"><Loding/></div> : category.length > 0 && category?.map(item =>(
         <HomeProdect catName={item.name}/>
      ))}
     </div>

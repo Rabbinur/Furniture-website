@@ -35,7 +35,8 @@ const Support = () => {
                   </div>
                   
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 pt-20 hidden md:block'>
+                <div className='hidden md:block'>
+                  <div className='grid  md:grid-cols-2 lg:grid-cols-2 gap-10 pt-20 '>
                     <div className="overflow-hidden relative group">
                        <Link>
                        <img src={image1} alt="" className='w-full group-hover:scale-105 duration-300' />
@@ -68,7 +69,7 @@ const Support = () => {
                           </div>
                        </div>
                     </div>
-                </div>
+                </div></div>
             </Container>
         </div>
     );

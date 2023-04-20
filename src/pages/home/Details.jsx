@@ -37,7 +37,7 @@ const Details = () => {
        transition={{ duration: 0.5 }}
        viewport={true}
       className="grid md:grid-cols-2 grid-cols-1 gap-6">
-        <img src={details?.image} alt="" className="w-full" />
+        <img src={details?.image} alt="" className="w-96" />
         <div className="mt-10">
           <h1 className="text-3xl font-semibold">{details?.name}</h1>
           <h3 className="text-2xl mt-2 text-green-500 font-semibold">

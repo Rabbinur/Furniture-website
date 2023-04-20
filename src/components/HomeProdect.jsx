@@ -37,12 +37,14 @@ const HomeProdect = ({ catName }) => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         viewport={true}
-      className="grid md:grid-cols-4 grid-cols-1 gap-6 text-center cursor-pointer">
+      className="grid md:grid-cols-4 grid-cols-1 gap-6 text-center items-center  cursor-pointer">
         {prodect.length > 0
           ? prodect?.map((item) => (
               <Link to={`/prodect/${item._id}`}>
                 <div className="border border-gray-300 rounded-md py-3 hover:scale-105 duration-300">
-                  <img src={item.image} alt="" />
+                 <div className="flex justify-center items-center mb-6">
+                 <img src={item.image} alt="" className="w-60 "/>
+                 </div>
                   <h1 className="text-lg font-medium">{item.name}</h1>
                   <h3 className="text-md font-semibold text-green-500">
                     {item.price}
